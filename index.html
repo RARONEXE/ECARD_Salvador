@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#403648">
+    <meta name="description" content="A personal thank-you card for Ma'am Roan from Earon.">
+    <title>For Ma’am Roan · From Earon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="login-screen" id="loginScreen" aria-labelledby="loginTitle">
+            <div class="login-card">
+                <p class="brand"><span class="brand-mark" aria-hidden="true">✦</span> with thanks, Earon</p>
+                <div class="friendship-bracelet" aria-hidden="true">
+                    <i></i><i></i><i></i><i></i><b>13</b><i></i><i></i><i></i><i></i>
+                    <span class="code-charm">&lt;/&gt;</span>
+                </div>
+                <p class="eyebrow">MADE BY EARON</p>
+                <h1 id="loginTitle">Are you Ma’am Roan?</h1>
+                <p class="login-copy">If so, enter the password to open your card.</p>
+                <form id="loginForm" class="login-form">
+                    <label for="loginPassword">Card password</label>
+                    <input id="loginPassword" name="password" type="password" autocomplete="current-password" required>
+                    <p class="form-error" id="loginError" role="alert" hidden>That password doesn’t look right. Try again.</p>
+                    <button class="primary-button" type="submit">Open the card <span aria-hidden="true">→</span></button>
+                </form>
+                <p class="login-footnote">Your details aren’t saved</p>
+            </div>
+        </section>
+
+        <section class="card-screen" id="feedScreen" aria-label="Thank-you card" hidden>
+            <header class="card-header">
+                <p><span aria-hidden="true">✦</span> A CARD FROM YOUR STUDENT</p>
+                <span class="feed-progress" id="feedProgress">0 / 4</span>
+            </header>
+            <div class="card-pages" id="feed" tabindex="0" aria-label="Scroll through your four-page thank-you card">
+                <article class="page page-one" id="page-one" data-page="1" aria-label="Page 1 of 4">
+                    <div class="mixtape-card">
+                        <p class="page-kicker"><span>ITWS-02 · SIDE A</span> A THANK-YOU MIXTAPE</p>
+                        <h2>For Ma'am Roan</h2>
+                        <div class="cassette" aria-hidden="true">
+                            <span class="cassette-screw screw-one"></span>
+                            <span class="cassette-screw screw-two"></span>
+                            <div class="cassette-label">
+                                <span class="cassette-caption">A CLASSROOM ORIGINAL</span>
+                                <strong>ITWS-02, WITH THANKS</strong>
+                                <span class="cassette-symbols" aria-hidden="true">✦ &nbsp; ☆ &nbsp; ✦</span>
+                            </div>
+                            <div class="cassette-window">
+                                <span class="cassette-reel"></span>
+                                <span class="cassette-tape"></span>
+                                <span class="cassette-reel"></span>
+                            </div>
+                            <span class="cassette-screw screw-three"></span>
+                            <span class="cassette-screw screw-four"></span>
+                        </div>
+                        <div class="mixtape-lower">
+                            <ol class="track-list" aria-label="Card chapters">
+                                <li><button class="track-button" type="button" data-page-target="page-one"><span>01</span> A note from me <span aria-hidden="true">↗</span></button></li>
+                                <li><button class="track-button" type="button" data-page-target="page-two"><span>02</span> Thanks for making this semester easier <span aria-hidden="true">↗</span></button></li>
+                                <li><button class="track-button" type="button" data-page-target="page-three"><span>03</span> When the code works <span aria-hidden="true">↗</span></button></li>
+                                <li><button class="track-button" type="button" data-page-target="page-four"><span>04</span> Thank you, Ma’am Roan <span aria-hidden="true">↗</span></button></li>
+                            </ol>
+                            <aside class="liner-note">
+                                <p class="liner-heading">LINER NOTES</p>
+                                <p>Hi, Ma’am Roan! I want to say thanks for all your help in ITWS - 02. Keep scrolling for a few things I appreciate about you.</p>
+                                <span>Earon</span>
+                            </aside>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page-two" id="page-two" data-page="2" aria-label="Page 2 of 4">
+                    <div class="paper-card">
+                        <p class="page-kicker"><span>02 / 04</span> FOR ALL YOUR HELP</p>
+                        <span class="page-decoration" aria-hidden="true">✧</span>
+                        <p class="page-script">Thank you</p>
+                        <h2>Thanks for making our life feels easier.</h2>
+                        <p class="page-copy">Hi, Ma’am Roan! Maraming Salamat po sa pag tuturo at pag papagaan nyo sa subject nato I really appreciate po talaga ty very much po.</p>
+                        <p class="page-footer">I APPRECIATE IT</p>
+                    </div>
+                </article>
+                <article class="page page-three" id="page-three" data-page="3" aria-label="Page 3 of 4">
+                    <div class="paper-card">
+                        <p class="page-kicker"><span>03 / 04</span> FOR THE LITTLE WINS</p>
+                        <span class="page-decoration" aria-hidden="true">❋</span>
+                        <p class="page-script">Much Appreciated!</p>
+                        <h2>You make the tricky parts make sense.</h2>
+                        <p class="page-copy">Thanks for guiding us and reccomending whats need to be change and whats not </p>
+                        <p class="page-footer">ONE STEP AT A TIME</p>
+                    </div>
+                </article>
+                <article class="page page-four" id="page-four" data-page="4" aria-label="Page 4 of 4">
+                    <div class="paper-card">
+                        <p class="page-kicker"><span>04 / 04</span> MOST OF ALL</p>
+                        <span class="page-decoration" aria-hidden="true">♡</span>
+                        <p class="page-script">Thank you, Ma’am Roan</p>
+                        <h2>I’m glad you were my teacher.</h2>
+                        <p class="page-copy">Thanks for everything you’ve taught me and for making the class a good place to learn.</p>
+                        <p class="page-footer">WITH THANKS, EARON</p>
+                    </div>
+                </article>
+            </div>
+            <p class="scroll-hint" id="scrollHint">Keep scrolling <span aria-hidden="true">↓</span></p>
+        </section>
+
+        <dialog class="invite-dialog" id="inviteDialog" aria-labelledby="inviteTitle">
+            <button class="dialog-close" id="closeInvite" type="button" aria-label="Close invitation">×</button>
+            <p class="eyebrow">ONE LAST THING</p>
+            <h2 id="inviteTitle">You have a message!</h2>
+            <p class="dialog-copy">A personal message from Earon is ready.</p>
+            <div class="invite-actions" id="inviteActions">
+                <button class="primary-button" id="yesButton" type="button">View message <span aria-hidden="true">→</span></button>
+                <button class="no-button" id="noButton" type="button">No thanks</button>
+            </div>
+            <p class="dialog-footnote">You can close this window to keep reading.</p>
+        </dialog>
+
+        <dialog class="message-dialog" id="messageDialog" aria-labelledby="messageTitle">
+            <button class="dialog-close" id="closeMessage" type="button" aria-label="Close message">×</button>
+            <p class="eyebrow">A PERSONAL NOTE</p>
+            <h2 id="messageTitle">Dear Ma’am Roan,</h2>
+            <div class="thank-you-message">
+                <p>Hello po, ma'am Roan!!! To start everything, I am very grateful to have you in my ITWS journey. You are the only teacher that made the subject a little easier. Salamat po sa lahat lahat nang naturo niyo sa amin ma'am. I know naging limited lang po ung interactions natin, but those interactions mattered most than any. I still want to have you as my teacher po.</p>
+                <p>Again, thank you po for everything you taught us and making this entire semester bearable and enjoyable.</p>
+                <p class="signoff">With thanks,<br><span>Earon</span></p>
+            </div>
+        </dialog>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
